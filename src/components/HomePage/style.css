@@ -1,0 +1,71 @@
+.main {
+  display: flex;
+  justify-content: center;
+  padding-top: 10%;
+  height: 35vh;
+  background: rgb(77, 68, 231);
+  background: rgb(77, 68, 231);
+  background: linear-gradient(
+    90deg,
+    rgba(77, 68, 231, 1) 0%,
+    rgba(117, 78, 236, 0.6727941176470589) 49%,
+    rgba(54, 4, 170, 0.891281512605042) 100%
+  );
+  position: relative;
+}
+
+.card {
+  position: relative;
+
+  width: 35%;
+  height: 500px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow-y: scroll;
+  /* z-index: 100; */
+}
+
+.card-headinng {
+  border-radius: 20px 20px 0px 0px;
+}
+.card-headinng .heading {
+  font-size: 20px;
+  padding: 20px 0px;
+  font-weight: 500;
+  text-align: center;
+  background-color: #f6f6f6;
+}
+Link {
+  text-decoration: none;
+}
+
+.users-list {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  border-bottom: 1px solid #c5c5c5;
+  padding: 10px 0px;
+  margin: 0px 20px;
+  gap: 10px;
+}
+
+.users-list img {
+  width: 10%;
+  height: 10%;
+  border-radius: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
