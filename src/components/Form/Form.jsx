@@ -93,6 +93,8 @@ const Forms = () => {
             {errors.password && touched.password ? (
               <div className="error">{errors.password}</div>
             ) : null}
+            <div className="forgot_password">Forgot Password?</div>
+
             <button type="submit" className="submit">
               Log In
             </button>

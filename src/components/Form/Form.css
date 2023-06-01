@@ -77,3 +77,9 @@
 .error {
   color: red;
 }
+
+.forgot_password {
+  font-size: 12px;
+  color: gray;
+  text-align: end;
+}
