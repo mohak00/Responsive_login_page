@@ -1,0 +1,45 @@
+.main_banner {
+  /* width: 50%; */
+  color: white;
+  /* height: 100%; */
+}
+.inner_banner {
+  position: relative;
+  background-color: black;
+  border-radius: 40px;
+
+  height: 100%;
+  padding: 4%;
+}
+.banner_text {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  /* background-color: aqua; */
+  font-weight: 600;
+  font-size: 2.5rem;
+  position: absolute;
+  bottom: 30%;
+}
+
+.banner_text .heading {
+  color: gray;
+  font-weight: 400;
+}
+
+.inner_banner .footer_left_side {
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  justify-content: space-between;
+  /* background-color: aquamarine; */
+  flex-grow: 1;
+  width: 90%;
+}
+
+.footer_left_side span {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

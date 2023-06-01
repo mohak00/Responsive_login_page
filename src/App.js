@@ -1,36 +1,25 @@
-import { Route, Routes } from "react-router-dom";
+import React from "react";
 import "./App.css";
-import Home from "./components/HomePage";
-import Profile from "./components/ProfilePage";
-import { useEffect, useState } from "react";
-import axios from "axios";
-import { useDispatch } from "react-redux";
-function App() {
-  const [users, setUsers] = useState([]);
-  const dispatch = useDispatch();
-  useEffect(() => {
-    axios
-      .get("https://panorbit.in/api/users.json", {})
-      .then(function (response) {
-        setUsers(response.data.users);
-        // console.log(users, response.data.users);
-        // console.log(response.data);
-        dispatch({
-          type: "ADD_USER",
-          payload: response.data.users,
-        });
-      });
-  }, []);
+import HomeBanner from "./components/HomeBanner/HomeBanner";
+import Forms from "./components/Form/Form.jsx";
+import { Box } from "@mui/material";
+
+const App = () => {
   return (
-    <div className="App">
-      <div>
-        <Routes>
-          {users.length > 0 && <Route path="/" exact element={<Home />} />}
-          <Route path="/:id" exact element={<Profile />} />
-        </Routes>
-      </div>
-    </div>
+    <Box
+      className="app"
+      sx={{
+        flexDirection: {
+          xs: "column",
+          sm: "column",
+          md: "row",
+        },
+      }}
+    >
+      <HomeBanner />
+      <Forms />
+    </Box>
   );
-}
+};
 
 export default App;

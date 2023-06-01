@@ -1,0 +1,79 @@
+.outer_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: aqua; */
+  width: 50%;
+}
+
+.inner_form {
+  width: 50%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  gap: 10px;
+}
+
+.form_heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: blanchedalmond; */
+  margin-top: 10%;
+}
+
+.form_heading img {
+  width: 30%;
+}
+
+.form_heading div {
+  /* font-size: 45px; */
+  font-weight: 600;
+}
+.form_heading span {
+  color: #08a593;
+}
+.form_heading .below_text {
+  font-size: 15px;
+  color: gray;
+}
+
+.inner_form .email {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+.inner_form .password {
+  padding: 10px;
+  border: 1px solid grey;
+
+  border-radius: 10px;
+  flex-grow: 1;
+}
+.pass_container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.inner_form .submit {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
+
+.outer_form .sign_up {
+  margin-top: 15%;
+  color: black;
+  font-size: 14px;
+}
+
+.outer_form .sign_up span {
+  color: #08a593;
+}
+.error {
+  color: red;
+}
